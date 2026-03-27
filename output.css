@@ -185,6 +185,15 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
+  .right-8 {
+    right: calc(var(--spacing) * 8);
+  }
   .mx-6 {
     margin-inline: calc(var(--spacing) * 6);
   }
