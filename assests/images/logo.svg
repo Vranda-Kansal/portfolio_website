@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768" width="1024" height="1024">
+  <rect width="768" height="768" fill="#000000"/>
+   <!-- Orange neon left bracket -->
+  <g fill="#ff6a00" filter="url(#glow)">
+    <path d="M 143 254 C 123 258 113 268 113 285 C 113 293 114 306 116 324 C 118 343 119 357 119 366 C 119 380 115 391 107 399 C 99 406 88 410 74 410 L 57 410 L 57 433 L 74 433 C 88 433 99 437 107 445 C 115 452 119 463 119 477 C 119 486 118 499 116 519 C 114 537 113 550 113 559 C 113 576 123 586 143 590 L 143 567 C 133 564 128 557 128 546 C 128 537 129 523 131 504 C 133 486 134 473 134 465 C 134 448 128 435 117 425 C 128 415 134 402 134 385 C 134 377 133 364 131 346 C 129 327 128 313 128 304 C 128 293 133 286 143 277 Z"/>
+  </g>
+ 
+  <!-- Orange neon right bracket -->
+  <g fill="#ff6a00" filter="url(#glow)">
+    <path d="M 625 590 C 645 586 655 576 655 559 C 655 550 654 537 652 519 C 650 499 649 486 649 477 C 649 463 653 452 661 445 C 669 437 680 433 694 433 L 711 433 L 711 410 L 694 410 C 680 410 669 406 661 399 C 653 391 649 380 649 366 C 649 357 650 343 652 324 C 654 306 655 293 655 285 C 655 268 645 258 625 254 L 625 277 C 635 286 640 293 640 304 C 640 313 639 327 637 346 C 635 364 634 377 634 385 C 634 402 640 415 651 425 C 640 435 634 448 634 465 C 634 473 635 486 637 504 C 639 523 640 537 640 546 C 640 557 635 564 625 567 Z"/>
+  </g>
+  <!-- VRANDA top line -->
+  <text x="384" y="410" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="8">VRANDA</text>
+  <!-- KANSAL bottom line -->
+  <text x="384" y="530" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="8">KANSAL</text>
+</svg>
