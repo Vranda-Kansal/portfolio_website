@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./font.css" rel="stylesheet" />
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="bg-[#111] text-white">
-    <section class="h-screen flex flex-col justify-between relative">
+    <section class="h-screen flex flex-col justify-between relative z-10">
       <header
         class="flex items-center justify-between px-6 max-w-6xl mx-auto w-full"
       >
@@ -130,6 +131,8 @@
           </svg>
         </div>
       </header>
+      <!-- Particle Background -->
+      <div id="particles-js" class="absolute inset-0"></div>
       <div class="flex justify-between max-w-6xl mx-auto w-full px-6">
         <div class="flex w-full gap-5">
           <div class="flex-1">
@@ -350,7 +353,74 @@
       </div>
       <button>Latest Work</button>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="./index.js"></script>
+    <!-- particles.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <!-- Particle Config -->
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 130, // reduced for smoother performance
+            density: { enable: true, value_area: 800 },
+          },
+          color: { value: "#ffffff" },
+
+          shape: { type: "circle" },
+
+          opacity: {
+            value: 0.6,
+            random: true,
+            anim: {
+              enable: true,
+              speed: 0.5, // slower fade = smoother
+              opacity_min: 0.2,
+              sync: false,
+            },
+          },
+
+          size: {
+            value: 2.5,
+            random: true,
+          },
+
+          line_linked: { enable: false },
+
+          move: {
+            enable: true,
+            speed: 0.8, // smooth motion
+            direction: "none",
+            random: true,
+            straight: false,
+            out_mode: "out",
+          },
+        },
+
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "bubble", // 🔥 changed from bubble
+            },
+            onclick: {
+              enable: false,
+            },
+            resize: true,
+          },
+
+          modes: {
+            // keeping bubble but not using it (optional future use)
+            bubble: {
+              distance: 200,
+              size: 3,
+              duration: 2,
+              opacity: 0.4,
+            },
+          },
+        },
+
+        retina_detect: true,
+      });
+    </script>
   </body>
 </html>
