@@ -31,3 +31,16 @@ lines.forEach((line) => {
 
   delay += 0.15;
 });
+
+gsap.set(["#hero-label", "#hero-name", "#hero-desc", "#hero-btns"], {
+  opacity: 0,
+  x: -40,
+});
+
+gsap.to(["#hero-label", "#hero-name", "#hero-desc", "#hero-btns"], {
+  opacity: 1,
+  x: 0,
+  duration: 0.8,
+  ease: "power2.out",
+  stagger: 0.15,
+});
